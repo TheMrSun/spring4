@@ -38,7 +38,23 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.7.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.0.7.RELEASE</version>
+        </dependency>
+        <!-- 嵌入式数据库，常用于单元测试,大小为2M-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.182</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
+
+
 
 
 </project>
