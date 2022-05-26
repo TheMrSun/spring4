@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="chromeBrowser" class="com.aop.ChromeBrowser" />
+    <bean id="browserAroundAdvice" class="com.aop.BrowserAop.BrowserAroundAdvice"/>
+
+    <bean id="browserProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="interfaces" value="com.aop.Browser" />
+        <property name="target" ref="chromeBrowser"/>
+        <property name="interceptorNames">
+            <list>
+                <value>browserAroundAdvice</value>
+            </list>
+        </property>
+
+    </bean>
+
+
+</beans>
+

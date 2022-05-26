@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="compatDisc4" class="com.mixConfig.BlankDisc4"
+        c:_0="haha"
+        c:_1="tom">
+        <constructor-arg>
+            <list>
+                <value>tom</value>
+                <value>jack</value>
+                <value>nice</value>
+            </list>
+        </constructor-arg>
+
+    </bean>
+</beans>
