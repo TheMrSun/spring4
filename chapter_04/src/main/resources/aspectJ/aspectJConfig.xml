@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="performance" class="com.aspectJ.concert.MagicPerformance"/>
+    <bean id="criticEngine" class="com.aspectJ.CriticEngineImpl" >
+        <property name="criticismPool">
+            <list>
+                <value>good</value>
+                <value>bad</value>
+                <value>bad3</value>
+                <value>bad4</value>
+                <value>bad5</value>
+                <value>bad6</value>
+            </list>
+        </property>
+    </bean>
+    <bean class="com.aspectJ.CriticAspect" factory-method="aspectOf" >
+        <property name="criticEngine" ref="criticEngine"/>
+    </bean>
+
+
+</beans>

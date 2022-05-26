@@ -11,4 +11,36 @@
 
     <artifactId>chapter_04</artifactId>
 
+<build>
+    <!-- 编译期织入 -->
+    <plugins>
+        <!-- 编译期织入 -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>aspectj-maven-plugin</artifactId>
+            <version>1.7</version>
+            <configuration>
+                <complianceLevel>1.8</complianceLevel>
+                <source>1.8</source>
+                <target>1.8</target>
+                <showWeaveInfo>true</showWeaveInfo>
+                <verbose>true</verbose>
+                <Xlint>ignore</Xlint>
+                <encoding>UTF-8</encoding>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>compile</goal>
+                        <goal>test-compile</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+
+</build>
+
+
+
 </project>

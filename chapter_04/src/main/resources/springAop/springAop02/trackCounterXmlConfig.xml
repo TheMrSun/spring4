@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean id="trackCounterXml" class="com.springAop.springAop02.TrackCounterXml"/>
+    <bean id="cd" class="com.springAop.springAop02.BlankDisc">
+        <property name="title" value="haha"/>
+        <property name="artist" value="tom"/>
+        <property name="tracks">
+            <list>
+                <value>tom</value>
+                <value>jack</value>
+                <value>nic</value>
+            </list>
+        </property>
+    </bean>
+
+    <aop:config>
+        <aop:aspect ref="trackCounterXml">
+            <aop:pointcut id="playedTrack" expression="execution(* com.springAop.springAop02.CompatDisc.playTrack(int))
+                            and args(trackNumber)"/>
+            <aop:before pointcut-ref="playedTrack" method="countTrack"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
