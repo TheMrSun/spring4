@@ -14,6 +14,11 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="" />
+    <file type="web" url="file://$PROJECT_DIR$/chapter_05" />
+    <file type="web" url="file://$PROJECT_DIR$/springMvcDemo" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
