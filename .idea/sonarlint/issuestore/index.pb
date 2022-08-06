@@ -272,10 +272,6 @@ i
 9springMvcDemo/src/main/java/com/tsl/config/WebConfig.java,7\d\7d1cbfca7825d6f33a8c9298394345d9f477ca7c
 j
 :springMvcDemo/src/main/java/com/tsl/config/RootConfig.java,1\a\1a60696e5e2193bd220520accc630420f8500eb5
-W
-'springMvcDemo/src/main/webapp/index.jsp,8\d\8d090f6f2cd9c40136c65f9568ce76a8bbf7cf2a
-]
--springMvcDemo/src/main/webapp/WEB-INF/web.xml,6\1\61104cb8d2ded7fce3860cf2bb5c46c4139f3ea1
 d
 4springMvcDemo/src/main/webapp/WEB-INF/views/show.jsp,5\4\54b1745fcf535d195aeaffb899a93b9ef0bdd4d2
 r
@@ -284,9 +280,3 @@ w
 GspringMvcDemo/src/main/java/com/tsl/config/SpittrWebAppInitializer.java,7\3\734eec4853ed9b3136c08aaeb3c69d2e2de98fb3
 B
 chapter_04/pom.xml,5\4\544861c3ea87e024a722798b429d75b3379a07c7
-E
-springMvcDemo/pom.xml,b\f\bf19b3805817c5ff598320f0b71936e9e3eb7077
-Z
-*chapter_05/src/main/webapp/WEB-INF/web.xml,0\8\080c13ab1933fd6f985d95407ed0c7772acb902b
-T
-$chapter_05/src/main/webapp/index.jsp,d\b\db1e94b119811c7f44781f9d203b78d308f9720a
