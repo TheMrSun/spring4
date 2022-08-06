@@ -1,6 +1,7 @@
 package spittr.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import spittr.controller.WebConfig;
 
 /**
  * @author Slience
@@ -18,7 +19,7 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class<?>[] { RootConfig.class };
     }
 
     @Override
