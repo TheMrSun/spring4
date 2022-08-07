@@ -12,8 +12,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springMvcDemo" />
+        <module name="chapter_07" />
         <module name="chapter_06" />
-        <module name="chapter_05" />
         <module name="chapter_04" />
         <module name="chapter_03" />
         <module name="chapter_02" />
@@ -22,6 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chapter" target="1.8" />
+      <module name="chapter_05" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

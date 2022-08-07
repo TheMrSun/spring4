@@ -17,6 +17,7 @@
         <module>springMvcDemo</module>
         <module>chapter_06</module>
         <module>chapter_06</module>
+        <module>chapter_07</module>
     </modules>
     <dependencies>
         <dependency>
